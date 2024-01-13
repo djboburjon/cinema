@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("../imgs/background-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 50px;
+  color: white;
+  text-align: center;
+}
+
+.buttons {
+  margin-bottom: 30px;
+  padding: 0 50px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+
+.button {
+  padding: 10px 18px;
+  border-radius: 8px;
+  background-color: white;
+  color: black;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.button1.active,
+.button2.active,
+.button3.active,
+.button4.active {
+  background-color: green;
+  color: white;
+}
+
+.cards {
+  padding: 0 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.card {
+  width: 300px;
+  margin-bottom: 30px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.card .title {
+  color: white;
+  font-size: larger;
+  margin-bottom: 16px;
+}
+.card_img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.card_img:hover {
+  transition: all 1.5s ease;
+  transform: scale(1.2);
+  transform-origin: 10px 10px;
+
+}
+
+.modal {
+  position: fixed;
+  left: 1400px;
+  width: 100%;
+  height: 100vh;
+  background-color: #000000e8;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* display: none; */
+  z-index: 10;
+  transition: all 1s ease;
+}
+
+.modal-main {
+  
+  background-color: orange;
+  color: white;
+  border-radius: 10px;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 800px;
+}
+
+.back {
+  color: blue;
+}
